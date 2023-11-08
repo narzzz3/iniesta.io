@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Ejercicio formularios</title>
+        <style>
+            legend{
+                color:rgb(0, 0, 0);
+            }
+            select{
+                background-color: aliceblue;
+            }
+
+            h4{
+                color: rgb(57, 57, 126);
+            }
+            div {
+                width: 300px;
+                margin: auto;
+            }
+            .button {
+                background-color: #4CAF50;
+                border-radius: 48px;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+}
+        
+        </style>
+    </head>
+    <body>
+        <h4> 1.</h4>
+        <form method="get">
+            <fieldset>
+                <legend> Datos de la incidencia:</legend>
+                <label for="id_nombre"> Usuario: </label> <br>
+                <input type="text" name="nombre_usuario"
+                id="id_nombre" placeholder="Escriba su nombre de usuario"> <br>
+                <br>
+                <label for="departamento"> Departamento:</label> <br>
+                <select name="departamento">
+                    <option value="IN">Informatica</option>
+                    <option value="RH">RRHH</option>
+                    <option value="FI">Finanzas</option>
+                </select> <br>
+                <br>
+                <label fro="descripcion"> Descripcion:</label> <br>
+                <textarea rows="5" cols="40">Describa la incidencia. . .</textarea> <br>
+                <br>
+                <label for="password"> Contraseña:</label> <br>  
+                <input type="password" name="password"
+                 id="id_password" placeholder="Escriba su contraseña">
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> Botones de reset y envio:</legend>
+                <input type="button" name="resetear"
+                id="resetear" value="Resetear">
+                <input type="button" name="enviar"
+                id="enviar" value="Enviar"> <br>
+                <br>
+            </fieldset>
+        </form>
+        <h4>2.</h4>
+        <form method="get">
+            <fieldset>
+                <legend> Datos fiscales:</legend>
+                <input type="radio" name="sexo">En Paro <br>
+                <input type="radio" name="sexo">Autónomo <br>
+                <input type="radio" name="sexo">Por c. ajena <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> Datos personales:</legend>
+                <label for="id_nombre"> Nombre: </label>
+                <input type="text" name="nombre_usuario"
+                id="id_nombre"> <br>
+                <label for="id_nombre"> Apellidos: </label>
+                <input type="text" name="apellidos_usuario"
+                id="id_apellidos"> <br>
+                <br>
+                <label for="name"> Sueldo:</label> 
+                <select name="sueldo">
+                    <option value="MAS">Más de 400</option>
+                    <option value="MEN">Menos de 400</option>
+                    <option value="VAR">Variables</option>
+                </select>
+                <br/>
+                <input type="checkbox" name="variables[]">
+                Con enfermedad profesional
+                <br/>
+                <input type="checkbox" name="variables[]">
+                Con padres a cargo
+                <br/>
+                <input type="checkbox" name="variables[]">
+                Con hijos a cargo 
+
+            </fieldset>
+        </form>
+        <h4>3.</h4>
+        <form method="get">
+            <fieldset>
+                <legend> Datos fiscales:</legend>
+                <select name="profesion" size="4">
+                    <option value="AUT">Automocion</option>
+                    <option value="MET">Metal</option>
+                    <option value="INF">Informatica</option>
+                    <option value="FIN">Finanzas</option>
+                </select> <br>
+                <input type="checkbox" name="variables[]">
+                Autonomo
+                <input type="checkbox" name="variables[]">
+                Cuenta ajena
+                <input type="checkbox" name="variables[]">
+                No sabe
+                <br>
+                <label for="funcion"> Describa su función:</label> <br>
+                <textarea rows="5" cols="40">Escriba aquí</textarea> <br>
+
+            </fieldset>
+        </form>
+        <h4>4.</h4>
+        <form method="get">
+            <fieldset>
+                <legend> Laboral</legend>
+                <input type="checkbox" name="variables[]">
+                Por cuenta ajena
+                <input type="checkbox" name="variables[]">
+                Autonomo
+                <br>
+                <label for="extranjero"> ¿Alguna vez en el extranjero?</label> <br>
+                <input type="radio" name="sexo">Sí
+                <select name="localizacion">
+                    <option value="AUT">Dentro de la UE</option>
+                    <option value="MET">Fuera de la UE</option>
+                </select> 
+                <br/>
+                <input type="radio" name="sexo">No
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> Personal</legend>
+                <label for="id_apellidos_nombre"> Apellidos y nombre: </label>
+                <input type="text" name="id_apellidos_nombre"
+                id="id_apellidos_nombre"> <br>
+                <label for="conocimiento"> Conocimiento sobre:</label> <br>
+                <select name="profesion" size="4">
+                    <option value="INF">Informatica</option>
+                    <option value="CON">Conduccion</option>
+                    <option value="FIN">Finanzas</option>
+                    <option value="LEY">Leyes</option>
+                </select> <br>
+
+            </fieldset>
+            <br> <br>
+
+            <div>
+                <fieldset style="text-align: center;">
+                    <label >Log in</label> <br> <br>
+                    <label  for="id_apellidos_nombre"> Email &nbsp&nbsp&nbsp need an account? <a href="https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com%2F" target="_blank">
+                    Sign up</a></label> <br>
+                    <input  type="email" name="id_email" id="id_email"> <br>
+                    <br>
+                    <label  for="id_password"> Password &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label> <input type="button" value="show"> <br>
+                    <input  type="password" name="id_password" id="id_password"> <br>
+                    <br>
+                    <input class="button" name="resetear" id="resetear" value="Log in"> <br>
+    
+                </fieldset>
+            </div>
+            
+        </form>
+    </body>
+
+</html>
